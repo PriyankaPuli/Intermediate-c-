@@ -7,14 +7,14 @@ TEST(Account, Empty_Cosnstructor) {
 }
 
 TEST(Account, Parameterized_Cosnstructor) {
-    Account A1("100", "Bharath", 500);
+    Account A1("500", "Priya", 800);
   EXPECT_EQ(500.0, A1.getBalance());
 }
 
 TEST(Account, Transaction) {
-    Account A1("100", "Bharath", 500);
-    A1.debit(100);
-    A1.credit(32.5);
-    EXPECT_EQ(432.5, A1.getBalance());
+    Account A1("500", "Priya", 800);
+    A1.debit(500);
+    A1.credit(52.5);
+    EXPECT_EQ(352.5, A1.getBalance());
 }
 }
